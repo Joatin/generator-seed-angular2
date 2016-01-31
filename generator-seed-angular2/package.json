@@ -1,0 +1,21 @@
+{
+  "name": "generator-seed-angular2",
+  "version": "0.0.0",
+  "description": "",
+  "homepage": "",
+  "author": {
+    "name": "Joatin Granlund",
+    "email": "granlundjoatin@icloud.com",
+    "url": ""
+  },
+  "files": [
+    "generators"
+  ],
+  "main": "generators/index.js",
+  "keywords": [
+    "yeoman-generator"
+  ],
+  "dependencies": {
+      
+  }
+}
