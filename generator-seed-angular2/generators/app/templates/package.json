@@ -1,3 +1,13 @@
 {
-    
+    "name": "",
+    "version": "0.0.0",
+    "dependencies": {
+        
+    },
+    "scripts": {
+        "test": "gulp test"
+    },
+    "devDependencies": {
+        "gulp": "~3.9.0"
+    }
 }
