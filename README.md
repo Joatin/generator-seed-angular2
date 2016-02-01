@@ -33,5 +33,5 @@ Apache-2.0 © [Joatin Granlund]()
 [daviddm-url]: https://david-dm.org/joatin/generator-seed-angular2
 [daviddmdev-image]: https://david-dm.org/joatin/generator-seed-angular2/dev-status.svg?theme=shields.io
 [daviddmdev-url]: https://david-dm.org/joatin/generator-seed-angular2#info=devDependencies
-[coveralls-image]: https://coveralls.io/repos/joatin/generator-seed-angular2/badge.svg
-[coveralls-url]: https://coveralls.io/r/joatin/generator-seed-angular2
+[coveralls-image]: https://coveralls.io/repos/github/Joatin/generator-seed-angular2/badge.svg?branch=master
+[coveralls-url]: https://coveralls.io/github/Joatin/generator-seed-angular2?branch=master
