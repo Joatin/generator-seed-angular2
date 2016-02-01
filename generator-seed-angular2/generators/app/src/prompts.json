@@ -1,0 +1,220 @@
+[
+  {
+    "type": "list",
+    "name": "jQuery",
+    "message": "Do you need jQuery?",
+    "choices": [
+      {
+        "value": {
+          "key": "jquery2"
+        },
+        "name": "jQuery 2.x (new version, lighter, IE9+)"
+      },
+      {
+        "value": {
+          "key": "jqLite"
+        },
+        "name": "None (Angular will use its own jqLite)"
+      }
+    ]
+  },
+  {
+    "type": "list",
+    "name": "ui",
+    "message": "Which UI framework do you want?",
+    "choices": [
+      {
+        "value": {
+          "key": "bootstrap",
+          "module": null
+        },
+        "name": "Bootstrap, the most popular HTML, CSS, and JS framework"
+      },
+      {
+        "value": {
+          "key": "angular-material",
+          "module": "ngMaterial"
+        },
+        "name": "Angular Material, the reference implementation of the Google's Material Design specification"
+      },
+      {
+        "value": {
+          "key": "noUI",
+          "module": null
+        },
+        "name": "None"
+      }
+    ]
+  },
+  {
+    "type": "list",
+    "name": "bootstrapVersion",
+    "message": "Which Bootstrap verison would you like to use?",
+    "choices": [
+      {
+        "value": {
+          "key": "4.0"
+        },
+        "name": "The latest version of bootstrap (Currently in beta)"
+      },
+      {
+        "value": {
+          "key": "3.0"
+        },
+        "name": "The mature and stable version of bootstrap"
+      }
+    ]
+  },
+  {
+    "type": "list",
+    "name": "bootstrapComponents",
+    "message": "How do you want to implement your Bootstrap components?",
+    "choices": [
+      {
+        "value": {
+          "key": "ng2-bootstrap",
+          "module": "ng2-bootstrap"
+        },
+        "name": "Angular UI Bootstrap, Bootstrap components written in pure AngularJS by the AngularUI Team"
+      },
+      {
+        "value": {
+          "key": "official",
+          "module": null
+        },
+        "name": "The official jQuery implementation of Bootstrap"
+      },
+      {
+        "value": {
+          "key": "noBootstrapComponents",
+          "module": null
+        },
+        "name": "No JavaScript, just CSS"
+      }
+    ]
+  },
+  {
+    "type": "list",
+    "name": "cssPreprocessor",
+    "message": "Which CSS preprocessor do you want?",
+    "choices": [
+      {
+        "value": {
+          "key": "node-sass",
+          "extension": "scss"
+        },
+        "name": "Sass (Node), Node.js binding to libsass, the C version of the popular stylesheet preprocessor, Sass."
+      },
+      {
+        "value": {
+          "key": "ruby-sass",
+          "extension": "scss"
+        },
+        "name": "Sass (Ruby), Original Syntactically Awesome StyleSheets (requires Ruby)"
+      },
+      {
+        "value": {
+          "key": "less",
+          "extension": "less"
+        },
+        "name": "Less, extends the CSS language, adding features that allow variables, mixins, functions and many other techniques."
+      },
+      {
+        "value": {
+          "key": "stylus",
+          "extension": "styl"
+        },
+        "name": "Stylus, supporting both an indented syntax and regular CSS style."
+      },
+      {
+        "value": {
+          "key": "noCssPrepro",
+          "extension": "css"
+        },
+        "name": "None, only the good old CSS"
+      }
+    ]
+  },
+  {
+    "type": "list",
+    "name": "jsPreprocessor",
+    "message": "Which JS preprocessor do you want?",
+    "choices": [
+      {
+        "value": {
+          "key": "noJsPrepro",
+          "extension": "js",
+          "srcExtension": "js"
+        },
+        "name": "None, I like to code in standard JavaScript."
+      },
+      {
+        "value": {
+          "key": "babel",
+          "extension": "js",
+          "srcExtension": "es6"
+        },
+        "name": "ES6 (Babel formerly 6to5), ECMAScript 6 compiled with Babel which requires no runtime."
+      },
+      {
+        "value": {
+          "key": "traceur",
+          "extension": "js",
+          "srcExtension": "es6"
+        },
+        "name": "ES6 (Traceur), ECMAScript 6 compiled with the Traceur compiler from Google."
+      },
+      {
+        "value": {
+          "key": "coffee",
+          "extension": "coffee",
+          "srcExtension": "coffee"
+        },
+        "name": "CoffeeScript, \"a little language that compiles into JavaScript\"."
+      },
+      {
+        "value": {
+          "key": "typescript",
+          "extension": "ts",
+          "srcExtension": "ts"
+        },
+        "name": "TypeScript, a typed superset of JavaScript that compiles to plain JavaScript."
+      }
+    ]
+  },
+  {
+    "type": "list",
+    "name": "htmlPreprocessor",
+    "message": "Which HTML template engine would you want?",
+    "choices": [
+      {
+        "value": {
+          "key": "noHtmlPrepro",
+          "extension": "html"
+        },
+        "name": "None, I like to code in standard HTML."
+      },
+      {
+        "value": {
+          "key": "jade",
+          "extension": "jade"
+        },
+        "name": "Jade (*.jade)"
+      },
+      {
+        "value": {
+          "key": "haml",
+          "extension": "haml"
+        },
+        "name": "Haml (*.haml)"
+      },
+      {
+        "value": {
+          "key": "handlebars",
+          "extension": "hbs"
+        },
+        "name": "Handlebars (*.hbs)"
+      }
+    ]
+  }
+]

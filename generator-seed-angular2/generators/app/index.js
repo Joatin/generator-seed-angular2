@@ -3,28 +3,28 @@ var yeoman = require('yeoman-generator');
 var chalk = require('chalk');
 var yosay = require('yosay');
 
-module.exports = yeoman.generators.Base.extend({
-  prompting: function () {
-    var done = this.async();
+var pkg = require('../../package.json');
+
+var AngularGenerator= yeoman.generators.Base.extend({
+    constructor: function () {
+        yeoman.Base.apply(this, arguments);
+
+        // Define arguments
+        this.argument('appName', {
+            type: 'String',
+            required: false
+        });
+        
+        this.version = pkg.version;
+
+        this.props = {};
+    },
+    init: function () {
 
     // Have Yeoman greet the user.
     this.log(yosay(
-      'Welcome to the bee\'s knees ' + chalk.red('generator-seed-angular2') + ' generator!'
+      'Welcome to the awesome ' + chalk.red('seed-angular2') + ' generator!'
     ));
-
-    var prompts = [{
-      type: 'confirm',
-      name: 'someOption',
-      message: 'Would you like to enable this option?',
-      default: true
-    }];
-
-    this.prompt(prompts, function (props) {
-      this.props = props;
-      // To access props later use this.props.someOption;
-
-      done();
-    }.bind(this));
   },
 
   writing: function () {
@@ -38,3 +38,7 @@ module.exports = yeoman.generators.Base.extend({
     this.installDependencies();
   }
 });
+
+require('./src/prompts')(AngularGenerator);
+
+module.exports = AngularGenerator;
