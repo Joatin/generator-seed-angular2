@@ -39,6 +39,7 @@ var AngularGenerator= yeoman.generators.Base.extend({
   }
 });
 
+require('./src/options')(AngularGenerator);
 require('./src/prompts')(AngularGenerator);
 
 module.exports = AngularGenerator;
