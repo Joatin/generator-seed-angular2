@@ -1,6 +1,6 @@
 {
   "name": "generator-seed-angular2",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "",
   "homepage": "",
   "author": {
@@ -17,10 +17,11 @@
   ],
   "dependencies": {
       "yeoman-generator": "~0.22.5",
-      "yosay": "~1.1.0"
+      "yosay": "~1.1.0",
+      "slash": "~1.0.0"
   },
   "devDependencies": {
-    "eslint-config-xo-space": "^0.7.0",
+    "eslint-config-xo-space": "^0.8.0",
     "gulp": "^3.9.0",
     "gulp-eslint": "^1.0.0",
     "gulp-exclude-gitignore": "^1.0.0",

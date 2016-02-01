@@ -4,7 +4,7 @@ var path = require('path');
 
 var s = require('underscore.string');
 
-var options = require('../options.json');
+var options = require('./options.json');
 
 module.exports = function (AngularGenerator) {
 

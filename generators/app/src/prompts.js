@@ -46,9 +46,9 @@ module.exports = function (AngularGenerator) {
 
     var done = this.async();
 
-    _.findWhere(prompts, {name: 'bootstrapComponents'}).when = function (props) {
+    /*_.findWhere(prompts, {name: 'bootstrapComponents'}).when = function (props) {
       return props.ui.key === 'bootstrap';
-    };
+    };*/
 
     this.prompt(prompts, function (props) {
       if (props.ui.key !== 'bootstrap') {

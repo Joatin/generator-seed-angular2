@@ -25,21 +25,14 @@ var AngularGenerator= yeoman.generators.Base.extend({
     this.log(yosay(
       'Welcome to the awesome ' + chalk.red('seed-angular2') + ' generator!'
     ));
-  },
-
-  writing: function () {
-    this.fs.copy(
-      this.templatePath('dummyfile.txt'),
-      this.destinationPath('dummyfile.txt')
-    );
-  },
-
-  install: function () {
-    this.installDependencies();
   }
 });
 
 require('./src/options')(AngularGenerator);
 require('./src/prompts')(AngularGenerator);
+require('./src/paths')(AngularGenerator);
+require('./src/files')(AngularGenerator);
+
+require('./src/write')(AngularGenerator);
 
 module.exports = AngularGenerator;
